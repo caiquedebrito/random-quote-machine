@@ -1,0 +1,26 @@
+.app {
+  height: 97vh;
+  text-align: center;
+}
+
+#quote-box {
+  max-width: 750px;
+  height: fit-content;
+  border-radius: 30px;
+}
+
+#author {
+  text-align: right;
+}
+
+.header {
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.social-medias a{
+  margin: 0 2px;
+}
