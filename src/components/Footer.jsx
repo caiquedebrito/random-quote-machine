@@ -13,7 +13,7 @@ export function Footer() {
           <a href="https://www.linkedin.com/in/caiquedebrito/">
             <ImLinkedin2 />
           </a>
-          <a href="">
+          <a href="https://github.com/caiquedebrito/random-quote-machine">
             <AiFillGithub />
           </a>
         </div>
