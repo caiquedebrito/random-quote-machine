@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Button } from 'react-bootstrap'
+import React, { useContext, useEffect } from 'react'
 import { QuoteContext } from '../context/QuoteContext'
 
 export function RequestQuoteButton() {
@@ -13,12 +12,16 @@ export function RequestQuoteButton() {
       setIsLoading(true)
 
       const url = "https://api.quotable.io/random"
-      const response = await fetch(url)
-      const {author, content }= await response.json()
-      setRandomQuote({
-        author,
-        content
-      })
+      try {
+        const response = await fetch(url)
+        const {author, content } = await response.json()
+        setRandomQuote({
+          author,
+          content
+        })
+      } catch(e) {
+        console.log(e)
+      }
       
       setIsLoading(false)
     }
