@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaTwitter } from 'react-icons/fa'
 
 export function TweeterButton() {
   return (
@@ -8,9 +9,9 @@ export function TweeterButton() {
       id='tweet-quote'
       target="_blank" 
       data-bs-toggle="tooltip" 
-      title='Tweet content'
+      title='Twitter quote'
       data-bs-placement="bottom">
-      Tweeter
+      <FaTwitter />
     </a>
   )
 }
