@@ -4,7 +4,7 @@ import { RequestQuoteButton } from './RequestQuoteButton'
 
 export function ContainerButton() {
   return (
-    <div className='d-flex justify-content-between m-auto px-5'>
+    <div className='d-flex px-5'>
       <TwitterButton />
       <RequestQuoteButton />;
     </div>
