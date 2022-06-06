@@ -11,7 +11,7 @@ export function Content() {
           "{ isLoading ? <div className='spinner-grow' role='status'></div> : content }"
         </p>
         <p className='text-left' id='author'>
-          - {author}
+          - {isLoading ? '...' : author}
         </p>
     </div>  )
 }
