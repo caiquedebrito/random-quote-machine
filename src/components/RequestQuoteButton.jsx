@@ -19,12 +19,13 @@ export function RequestQuoteButton() {
         author,
         content
       })
+      
       setIsLoading(false)
     }
 
   return (
-    <Button
-        className='text-dark border border-dark fw-bolder'
+    <button
+        className='btn btn-outline-primary fw-bolder border border-dark'
         onClick={requestQuote}
         disabled={isLoading}
         id="new-quote"
@@ -33,6 +34,6 @@ export function RequestQuoteButton() {
         data-bs-placement="bottom"
     >
       {isLoading ? '...' : 'New'}
-    </Button>
+    </button>
   )
 }

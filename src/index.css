@@ -1,5 +1,5 @@
 .app {
-  height: 97vh;
+  min-height: 97vh;
   text-align: center;
 }
 
@@ -19,8 +19,13 @@
 
 h1 {
   text-align: center;
+  font-size: 1.5625rem !important;
 }
 
 .social-medias a{
   margin: 0 2px;
+}
+
+#text {
+  font-weight: bold;
 }
