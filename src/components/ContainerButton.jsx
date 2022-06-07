@@ -6,7 +6,7 @@ export function ContainerButton() {
   return (
     <div className='d-flex px-5'>
       <TwitterButton />
-      <RequestQuoteButton />;
+      <RequestQuoteButton />
     </div>
   )
 }
